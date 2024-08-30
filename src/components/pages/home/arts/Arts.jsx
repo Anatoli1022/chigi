@@ -4,9 +4,26 @@ import line from '../../../../assets/line.svg';
 import copy from '../../../../assets/copy.svg';
 import CatImage from '../../../shared/image/CatImage';
 import { data } from './data';
+
 const cx = classNames.bind(styles);
 
 const Arts = () => {
+  const handleCopyClick = () => {
+    if (navigator.clipboard) {
+      const textToCopy = 'SZEs26Drn...'; // Замените на текст, который нужно скопировать
+      navigator.clipboard.writeText(textToCopy).then(
+        () => {
+          console.log('Текст скопирован в буфер обмена!');
+        },
+        (err) => {
+          console.error('Ошибка при копировании текста: ', err);
+        }
+      );
+    } else {
+      console.error('Clipboard API не поддерживается.');
+    }
+  };
+
   return (
     <section className={cx('arts')}>
       <div className={cx('container')}>
@@ -32,9 +49,15 @@ const Arts = () => {
         </div>
         <div className={cx('wrapper-button')}>
           <button className={cx('button-red')}>Buy</button>
-          <button className={cx('button-black')}>
+          <button className={cx('button-black')} onClick={handleCopyClick}>
             <span>SZEs26Drn...</span>{' '}
-            <img src={copy} className={'image-copy'} alt="" loading="lazy" aria-hidden="true" />
+            <img
+              src={copy}
+              className={'image-copy'}
+              alt=""
+              loading="lazy"
+              aria-hidden="true"
+            />
           </button>
         </div>
       </div>
