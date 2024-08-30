@@ -23,6 +23,7 @@ const Join = () => {
             <h2 className={cx('title')}>Join us</h2>
             <p className={cx('text')}>+15 to social credit</p>
             <div className={cx('social')}>
+              {/* Добавить ссылки */}
               <a href="">
                 <img src={telegram} alt="telegram" loading="lazy" />
               </a>

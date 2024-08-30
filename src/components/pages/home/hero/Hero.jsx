@@ -39,6 +39,7 @@ const Hero = () => {
             </div>
 
             <div className={cx('social')}>
+              {/* Добавить ссылки */}
               <a href="">
                 <img src={telegram} alt="telegram" loading="lazy" />
               </a>
@@ -58,6 +59,7 @@ const Hero = () => {
             aria-hidden="true"
           />
           <div className={cx('social-mobile')}>
+            {/* Добавить ссылки */}
             <a href="">
               <img
                 src={telegram}
