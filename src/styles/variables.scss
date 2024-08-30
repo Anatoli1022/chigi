@@ -1,11 +1,8 @@
 // Colors
-// $color-primary: #e8e8e8;
-// $color-yellow: #fcd54c;
-$color-black: rgb(40, 40, 40);
-$color-green: rgba(51, 153, 51, 1);
+
+$color-black: rgb(24, 24, 27);
+$color-red: rgb(236, 57, 57);
 $color-white: rgb(255, 255, 255);
-$color-gray-lite: rgb(221, 221, 221);
-$color-gray: rgb(139, 139, 139);
 
 $color-primary-hover: '';
 $color-accent-primary-hover: '';
@@ -44,3 +41,17 @@ $breakpoint-lg-down: 1280px - 0.02px;
 $breakpoint-md-down: 1024px - 0.02px;
 $breakpoint-sm-down: 768px - 0.02px;
 $breakpoint-xs-down: 479px - 0.02px;
+
+
+
+@mixin sm-down {
+    @media (max-width: $breakpoint-sm-down) {
+      @content;
+    }
+  }
+
+@mixin xs-down {
+    @media (max-width: $breakpoint-xs-down) {
+      @content;
+    }
+  }

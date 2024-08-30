@@ -1,0 +1,48 @@
+@import '../../../../styles/variables.scss';
+
+.join {
+  margin-top: 150px;
+}
+
+.image {
+  max-width: 100%;
+}
+.bottom-image {
+  transform: rotate(180deg);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 70px;
+}
+
+.title {
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -4%;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  column-gap: 12px;
+}
+
+.cat-image {
+  @include sm-down {
+    display: none;
+  }
+}

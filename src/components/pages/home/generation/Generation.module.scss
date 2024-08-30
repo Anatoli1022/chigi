@@ -1,0 +1,22 @@
+.generation {
+  margin-top: 150px;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+.right-line {
+  transform: scale(-1, 1);
+}
+.title {
+  font-size: 48px;
+  line-height: 68px;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin-top: 30px;
+}

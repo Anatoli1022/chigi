@@ -1,0 +1,82 @@
+@import '../../../../styles/variables.scss';
+
+.arts {
+  margin-top: 150px;
+}
+
+.container {
+  max-width: 1720px;
+  margin: auto;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+.right-line {
+  transform: scale(-1, 1);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.item {
+  margin: -10px;
+}
+
+.wrapper-button {
+  max-width: 318px;
+  display: flex;
+  column-gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin: 48px auto auto auto;
+}
+
+.button-red {
+  padding: 10px 30px;
+  background-color: $color-red;
+  border: 1px solid $color-red;
+  transition: $transition-base;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: $color-white;
+  border-radius: 25px;
+  cursor: pointer;
+  &:hover {
+    background: transparent;
+  }
+}
+
+.button-black {
+  padding: 13px 24px;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  border-radius: 39px;
+  cursor: pointer;
+  // transition: $transition-base;
+  background-color: $color-black;
+  border: 1px solid $color-red;
+  // &:hover {
+  //   background-color: $color-red;
+  // }
+}
