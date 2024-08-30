@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Generation.module.scss';
 import CatImage from '../../../shared/image/CatImage';
-import cat from '../../../../assets/cats/cat-shaolin.png';
+import cat from '../../../../assets/cats/cat-shaolin.webp';
 import line from '../../../../assets/line.svg';
 const cx = classNames.bind(styles);
 const Generation = () => {

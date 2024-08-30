@@ -2,6 +2,9 @@
 
 .join {
   margin-top: 150px;
+  @include sm-down {
+    margin-top: 100px;
+  }
 }
 
 .image {
@@ -21,17 +24,24 @@
 .title {
   font-size: 128px;
   line-height: 100%;
-  letter-spacing: -4%;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  @include sm-down {
+    font-size: 48px;
+  }
 }
 
 .text {
   font-size: 32px;
   line-height: 48px;
-  letter-spacing: -4%;
   text-align: left;
+  font-weight: 400;
   text-transform: lowercase;
+  @include sm-down {
+    text-align: center;
+    font-size: 32px;
+  }
 }
 
 .social {
@@ -39,6 +49,9 @@
   align-items: center;
   margin-top: 20px;
   column-gap: 12px;
+  @include sm-down {
+    margin-top: 30px;
+  }
 }
 
 .cat-image {

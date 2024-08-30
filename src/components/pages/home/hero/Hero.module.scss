@@ -1,2 +1,85 @@
 @import '../../../../styles/variables.scss';
 
+.hero {
+  padding-top: 4px;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 30px;
+
+  justify-content: center;
+  justify-content: space-between;
+
+  @include sm-down {
+    row-gap: 28px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container-image {
+  display: flex;
+  row-gap: 28px;
+  align-items: center;
+  column-gap: 30px;
+  @include sm-down {
+    flex-direction: column;
+  }
+}
+
+.image {
+  max-width: 100%;
+}
+
+.top-image {
+  margin-bottom: -60px;
+  @include sm-down {
+    margin: 0;
+  }
+}
+.bottom-image {
+  transform: rotate(180deg);
+  margin-top: -80px;
+  @include sm-down {
+    margin: 0;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 12px;
+  @include sm-down {
+    display: none;
+  }
+}
+
+.social-mobile {
+  display: none;
+  @include sm-down {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    margin-top: 30px;
+  }
+}
+.image-social-mobile {
+  max-width: 52px;
+}
+
+.left-symbol {
+  @include sm-down {
+    max-width: 36px;
+    transform: scale(1, -1) rotate(-90deg);
+  }
+}
+.right-symbol {
+  transform: scale(-1, 1);
+  @include sm-down {
+    transform: scale(1, -1) rotate(-90deg);
+    max-width: 36px;
+  }
+}

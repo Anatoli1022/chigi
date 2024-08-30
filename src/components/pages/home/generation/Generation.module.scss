@@ -1,5 +1,10 @@
+@import '../../../../styles/variables.scss';
+
 .generation {
   margin-top: 150px;
+  @include sm-down {
+    margin-top: 64px;
+  }
 }
 
 .wrapper-title {
@@ -7,6 +12,9 @@
   align-items: center;
   justify-content: center;
   column-gap: 8px;
+  @include sm-down {
+    column-gap: 13px;
+  }
 }
 .right-line {
   transform: scale(-1, 1);
@@ -14,9 +22,18 @@
 .title {
   font-size: 48px;
   line-height: 68px;
+  font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  @include sm-down {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .wrapper {
-  margin-top: 30px;
+  margin-top: 40px;
+  @include sm-down {
+    margin-top: 32px;
+  }
 }

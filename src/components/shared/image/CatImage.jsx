@@ -15,7 +15,7 @@ const CatImage = ({ image ,alt}) => {
         className={cx('image')}
       />
       <img src={ellipse} alt="" className={cx('absolute')} />
-      <img src={image} alt={alt} className={cx('absolute')} />
+      <img src={image} alt={alt} className={cx('absolute','cat')} />
     </div>
   );
 };
