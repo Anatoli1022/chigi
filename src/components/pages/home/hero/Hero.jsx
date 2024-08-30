@@ -41,13 +41,31 @@ const Hero = () => {
             <div className={cx('social')}>
               {/* Добавить ссылки */}
               <a href="">
-                <img src={telegram} alt="telegram" loading="lazy" />
+                <img
+                  src={telegram}
+                  alt="telegram"
+                  loading="lazy"
+                  width="72"
+                  height="72"
+                />
               </a>
               <a href="">
-                <img src={twitter} alt="twitter" loading="lazy" />
+                <img
+                  src={twitter}
+                  alt="twitter"
+                  loading="lazy"
+                  width="72"
+                  height="72"
+                />
               </a>
               <a href="">
-                <img src={eagle} alt="eagle" loading="lazy" />
+                <img
+                  src={eagle}
+                  alt="eagle"
+                  loading="lazy"
+                  width="72"
+                  height="72"
+                />
               </a>
             </div>
           </div>
@@ -66,6 +84,8 @@ const Hero = () => {
                 className={cx('image-social-mobile')}
                 alt="telegram"
                 loading="lazy"
+                width="52"
+                height="52"
               />
             </a>
             <a href="">
@@ -74,6 +94,8 @@ const Hero = () => {
                 className={cx('image-social-mobile')}
                 alt="twitter"
                 loading="lazy"
+                width="52"
+                height="52"
               />
             </a>
             <a href="">
@@ -82,6 +104,8 @@ const Hero = () => {
                 className={cx('image-social-mobile')}
                 alt="eagle"
                 loading="lazy"
+                width="52"
+                height="52"
               />
             </a>
           </div>

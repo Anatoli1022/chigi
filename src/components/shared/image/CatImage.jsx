@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './Image.module.scss';
 
 const cx = classNames.bind(styles);
-const CatImage = ({ image ,alt}) => {
+const CatImage = ({ image, alt }) => {
   return (
     <div className={cx('container-image')}>
       <img
@@ -14,8 +14,19 @@ const CatImage = ({ image ,alt}) => {
         aria-hidden="true"
         className={cx('image')}
       />
-      <img src={ellipse} alt="" className={cx('absolute')} />
-      <img src={image} alt={alt} className={cx('absolute','cat')} />
+      <img
+        src={ellipse}
+        alt=""
+        className={cx('absolute')}
+        loading="lazy"
+        aria-hidden="true"
+      />
+      <img
+        src={image}
+        alt={alt}
+        className={cx('absolute', 'cat')}
+        loading="lazy"
+      />
     </div>
   );
 };

@@ -10,7 +10,11 @@
 .container {
   max-width: 1740px;
   margin: auto;
-  padding: 0 6px;
+
+  @include sm-down {
+    max-width: 366px;
+    padding: 0 4px;
+  }
 }
 
 .title {
